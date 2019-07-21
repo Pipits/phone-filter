@@ -57,7 +57,7 @@ If you have defined a default country `PIPIT_PHONE_COUNTRY` in your Perch config
 | Attribute  | Description                     |
 |------------|---------------------------------|
 | country    | The country of the phone number. Takes a two-letter country code [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) |
-| output     | The formatting option to be used to output the phone number. See table below. |
+| output     | The formatting option to be used to output the phone number. See table below. Omitting the attribute will output the phone number with no spacing. |
 
 ### Output options
 
@@ -66,3 +66,11 @@ If you have defined a default country `PIPIT_PHONE_COUNTRY` in your Perch config
 | international    |  International formatting of the phone number                             |
 | national         |  Nationaly formatting of the phone number                                 |
 | tel_link         |  The phone number formatted for tel URI - RFC3966 (prefixed with `tel:`)  |
+
+
+---
+
+## Credits
+
+- [libphonenumber-for-php](https://github.com/giggsey/libphonenumber-for-php)
+- [Drew McLellan](https://github.com/drewm)'s script for [converting phone words to numbers](https://community.perchcms.com/forum/thread/334-phone-number-template-filter/?postID=1639#post1639)
